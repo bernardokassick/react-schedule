@@ -12,8 +12,13 @@ export interface IEditingEvent {
   calendarId: number;
 }
 
-export interface IEvent extends IEditingEvent {
+// export interface IEvent extends IEditingEvent {
+export interface IEvent {
   id: number;
+  date: string;
+  time?: string;
+  desc: string;
+  calendarId: number;
 }
 
 export interface IUser {
